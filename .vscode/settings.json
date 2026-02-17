@@ -51,5 +51,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Indie_Game_Dev.sln"
+    "dotnet.defaultSolution": "Not-A-RougeLike-Studio-Repo.sln"
 }
