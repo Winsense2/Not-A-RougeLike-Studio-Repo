@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 451648622e014a242993c08532e09449
+guid: 3220c515f7220a247b4f4884545c61d8
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,13 +7,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: body_texture
-    second: {fileID: 2100000, guid: 75cb9533196a3194881d0c7814cb27a8, type: 2}
+      name: env_texture
+    second: {fileID: 2100000, guid: dc5b5130b4a5aac488cb63297395c85e, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: head_texture
-    second: {fileID: 2100000, guid: 95ebb8f95150c2443af27167ee01d0fa, type: 2}
+      name: env_water
+    second: {fileID: 2100000, guid: 0d5665349e8152444a68311c58300cbd, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -45,7 +45,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.4
+    globalScale: 3
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -100,7 +100,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.004
+    globalScale: 3
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

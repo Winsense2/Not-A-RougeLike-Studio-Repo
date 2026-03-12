@@ -14,6 +14,54 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
   - {fileID: 899146787097738247}
+  - {fileID: 588154067500932036}
+--- !u!114 &588154067500932036
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48a79b01ea5641d4aa6daa2e23605641, type: 3}
+  m_Name: Bloom
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  intensity:
+    overrideState: 1
+    value: 0.88
+  threshold:
+    overrideState: 1
+    value: 0
+  softKnee:
+    overrideState: 1
+    value: 0.5
+  clamp:
+    overrideState: 1
+    value: 65472
+  diffusion:
+    overrideState: 1
+    value: 7.48
+  anamorphicRatio:
+    overrideState: 1
+    value: 0.08
+  color:
+    overrideState: 1
+    value: {r: 0.036826134, g: 0, b: 1, a: 1}
+  fastMode:
+    overrideState: 1
+    value: 1
+  dirtTexture:
+    overrideState: 0
+    value: {fileID: 2800000, guid: 94086b884cc97bc44ba48e874c311920, type: 3}
+    defaultState: 1
+  dirtIntensity:
+    overrideState: 0
+    value: 0
 --- !u!114 &899146787097738247
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -31,15 +79,15 @@ MonoBehaviour:
     overrideState: 1
     value: 1
   gradingMode:
-    overrideState: 0
-    value: 1
+    overrideState: 1
+    value: 0
   externalLut:
     overrideState: 0
     value: {fileID: 0}
     defaultState: 1
   tonemapper:
     overrideState: 0
-    value: 0
+    value: 1
   toneCurveToeStrength:
     overrideState: 0
     value: 0
@@ -67,7 +115,7 @@ MonoBehaviour:
     value: 1
   temperature:
     overrideState: 1
-    value: -18
+    value: -19
   tint:
     overrideState: 1
     value: 0
@@ -75,11 +123,11 @@ MonoBehaviour:
     overrideState: 0
     value: {r: 1, g: 1, b: 1, a: 1}
   hueShift:
-    overrideState: 0
-    value: 0
+    overrideState: 1
+    value: 19
   saturation:
     overrideState: 1
-    value: 25
+    value: 44
   brightness:
     overrideState: 0
     value: 0
@@ -88,7 +136,7 @@ MonoBehaviour:
     value: 0
   contrast:
     overrideState: 1
-    value: -10
+    value: 4
   mixerRedOutRedIn:
     overrideState: 0
     value: 100
