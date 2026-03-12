@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shader Graphs_ScrollingWater
+  m_Name: ScrollingWater_Top
   m_Shader: {fileID: -6465566751694194690, guid: 4d439d10bd6872346bda20c44b484523, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -45,7 +45,7 @@ Material:
     - _BUILTIN_QueueControl: 1
     - _BUILTIN_QueueOffset: 0
     - _DepthFaceDistance: 0
-    - _ScrollSpeed: 0.1
+    - _ScrollSpeed: 0.2
     - _Transparency: 0.1
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 0.09411765}
