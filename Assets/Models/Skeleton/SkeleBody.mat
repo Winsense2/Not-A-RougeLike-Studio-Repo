@@ -8,10 +8,11 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: SkeleBody
-  m_Shader: {fileID: 4800000, guid: d798d1968e2101f4993d8f166bdbc9bb, type: 3}
+  m_Shader: {fileID: 4800000, guid: 5dcce46e7b0532445a71b4117e30bcc3, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
+  m_ValidKeywords:
+  - _FILTERINGMODE_PS1
   m_InvalidKeywords:
   - _ALPHAPREMULTIPLY_ON
   m_LightmapFlags: 4
@@ -66,15 +67,19 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _AlphaCutoff: 0.85
     - _BumpScale: 1
+    - _CullMode: 2
     - _CustomDepthOffset: 0
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 10
+    - _FilteringMode: 2
     - _FlatShading: 0
     - _GlossMapScale: 1
     - _Glossiness: 0
     - _GlossyReflections: 1
+    - _IsUnlit: 0
     - _Metallic: 0
     - _Mode: 3
     - _ObjectDithering: 1
@@ -88,4 +93,5 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
+    - _OverlayColor: {r: 1, g: 1, b: 1, a: 0}
   m_BuildTextureStacks: []
