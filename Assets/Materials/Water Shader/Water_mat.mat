@@ -38,7 +38,7 @@ Material:
     m_TexEnvs:
     - _BaseTexture:
         m_Texture: {fileID: 2800000, guid: 13dbfbba9c1c67c4c8802c9a3864223f, type: 3}
-        m_Scale: {x: 5, y: 5}
+        m_Scale: {x: 3, y: 3}
         m_Offset: {x: 0, y: 0}
     - _DisplacementTexture:
         m_Texture: {fileID: 2800000, guid: bc8bc9d9f89e26a4aad1da63ba9aad21, type: 3}
@@ -49,7 +49,7 @@ Material:
     - _BUILTIN_QueueControl: 0
     - _BUILTIN_QueueOffset: 0
     - _DisplacementStrength: 0.75
-    - _Transparency: 0.35
+    - _Transparency: 0.2
     - _WaveSpeed: 0.0015
     m_Colors:
     - _Bottom_ScrollSpeed: {r: -0.01, g: -0.01, b: 0, a: 0}

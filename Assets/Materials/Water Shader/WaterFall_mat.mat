@@ -1,18 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-5463946778152176922
-MonoBehaviour:
-  m_ObjectHideFlags: 11
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 639247ca83abc874e893eb93af2b5e44, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 0
 --- !u!21 &2100000
 Material:
   serializedVersion: 8
@@ -20,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: WaterFall_mat
-  m_Shader: {fileID: -6465566751694194690, guid: 4122a7c779e27ce4fb86979b3f7bd35d, type: 3}
+  m_Name: waterfall_mat
+  m_Shader: {fileID: -6465566751694194690, guid: 3bc7fb6f6f4db4743ac409f203249fe8, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -38,11 +25,11 @@ Material:
     m_TexEnvs:
     - _BaseTexture:
         m_Texture: {fileID: 2800000, guid: 13dbfbba9c1c67c4c8802c9a3864223f, type: 3}
-        m_Scale: {x: 1, y: 1}
+        m_Scale: {x: 1.2, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DisplacementTexture:
         m_Texture: {fileID: 2800000, guid: bc8bc9d9f89e26a4aad1da63ba9aad21, type: 3}
-        m_Scale: {x: 0.5, y: 0.2}
+        m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
@@ -53,6 +40,19 @@ Material:
     - _WaveSpeed: 0.01
     m_Colors:
     - _Bottom_ScrollSpeed: {r: 0.1, g: 0, b: 0, a: 0}
-    - _OverlayColor: {r: 0.4575472, g: 0.57621366, b: 1, a: 1}
+    - _OverlayColor: {r: 0.45882353, g: 0.5764706, b: 1, a: 1}
     - _Top_ScrollSpeed: {r: 0.2, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
+--- !u!114 &3518292489499094498
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 639247ca83abc874e893eb93af2b5e44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 0

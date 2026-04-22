@@ -17,6 +17,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private CinemachineVirtualCamera ThirdPersonCamera;
     private Cinemachine3rdPersonFollow followComponent;
 
+    [SerializeField] private Animator animator;
+
     private void Awake()
     {
         CurrentSpeed = NormalSpeed;
@@ -50,6 +52,8 @@ public class PlayerMovement : MonoBehaviour
         float moveAmountVertical = verticalInput * CurrentSpeed * Time.deltaTime;
         float moveAmountHorizontal = horizontalInput * CurrentSpeed * Time.deltaTime;
 
+        animator.SetFloat("Walking", verticalInput);
+
         if (Input.GetKey(KeyCode.LeftShift))
         {
             CurrentSpeed = SprintSpeed;
@@ -76,7 +80,7 @@ public class PlayerMovement : MonoBehaviour
                 //DOTween.To(() => followComponent.ShoulderOffset, x => followComponent.ShoulderOffset = x, new Vector3(0, 1, 3), 2f);
             }
 
-            playerPos += transform.forward * moveAmountVertical;
+            playerPos += transform.forward.normalized * moveAmountVertical;
         }
 
         // Detect the moment backwards input starts
@@ -95,7 +99,7 @@ public class PlayerMovement : MonoBehaviour
                 //DOTween.To(() => followComponent.ShoulderOffset, x => followComponent.ShoulderOffset = x, new Vector3(0, 1, -3), 2f);
             }
 
-            playerPos -= transform.forward * moveAmountVertical;
+            playerPos -= transform.forward.normalized * moveAmountVertical;
         }
 
         if (verticalInput < 1)
@@ -119,7 +123,7 @@ public class PlayerMovement : MonoBehaviour
             }
 
             thirdPersonCameraMove.rotation.x += CameraTurnAmount;
-            playerPos += transform.forward * moveAmountHorizontal;
+            playerPos += transform.forward.normalized * moveAmountHorizontal;
         }
 
         if (horizontalInput < 0)
@@ -138,7 +142,7 @@ public class PlayerMovement : MonoBehaviour
             }
 
             thirdPersonCameraMove.rotation.x -= CameraTurnAmount;
-            playerPos -= transform.forward * moveAmountHorizontal;
+            playerPos -= transform.forward.normalized * moveAmountHorizontal;
         }
 
         if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.A))
