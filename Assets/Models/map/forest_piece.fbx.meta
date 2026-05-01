@@ -1,9 +1,29 @@
 fileFormatVersion: 2
-guid: f83f9f4c389d13c4c9529406230ae6e8
+guid: abf59b6d340de6b44a4c5ba589b56485
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: minaquaduct
+    second: {fileID: 2100000, guid: bd291bbc7244fc444915511dad7e2525, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: player_base
+    second: {fileID: 2100000, guid: 8bbaa6d0e754add49b5af238b2700d1b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tree_leaves
+    second: {fileID: 2100000, guid: 32fa9ebcc8fd07746b1405f654bbbcc7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tree_stump
+    second: {fileID: 2100000, guid: 4d4840f7e9fa4b14bb9ef2d24e0282f6, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

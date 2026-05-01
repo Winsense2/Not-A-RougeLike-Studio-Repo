@@ -52,8 +52,11 @@ public class PlayerMovement : MonoBehaviour
         float moveAmountVertical = verticalInput * CurrentSpeed * Time.deltaTime;
         float moveAmountHorizontal = horizontalInput * CurrentSpeed * Time.deltaTime;
 
-        animator.SetFloat("Walking", verticalInput);
-
+        if (animator != null)
+        {
+            animator.SetFloat("Walking", verticalInput);
+        }
+        
         if (Input.GetKey(KeyCode.LeftShift))
         {
             CurrentSpeed = SprintSpeed;

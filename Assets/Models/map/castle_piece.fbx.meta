@@ -1,9 +1,19 @@
 fileFormatVersion: 2
-guid: f83f9f4c389d13c4c9529406230ae6e8
+guid: 733443ccfd9ba7247b59a5c9089ef09f
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: minaquaduct
+    second: {fileID: 2100000, guid: 1189301161eff21418b48390b55e5830, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: roof
+    second: {fileID: 2100000, guid: b8c9a7344dcd71f47ba4a81fd71014ac, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
