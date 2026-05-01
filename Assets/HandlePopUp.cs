@@ -1,16 +1,22 @@
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
 public class HandlePopUp : MonoBehaviour
 {
     [SerializeField] TextMeshPro text;
+    [SerializeField] List<SpriteRenderer> sprites = new List<SpriteRenderer>();
+    [SerializeField] SpriteRenderer icon;
 
     bool active;
 
     void Start()
     {
         active = false;
-        gameObject.GetComponent<SpriteRenderer>().enabled = active;
+        foreach(SpriteRenderer sprite in sprites)
+        {
+            sprite.enabled = active;
+        }
     }
 
     void Update()
@@ -26,12 +32,16 @@ public class HandlePopUp : MonoBehaviour
                 active = false;
             }
 
-            gameObject.GetComponent<SpriteRenderer>().enabled = active;
+            foreach(SpriteRenderer sprite in sprites)
+            {
+                sprite.enabled = active;
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.H))
         {
             text.text = "<b><color=purple>Enchanted</color></b> Forest";
+            icon.enabled = true;
         }
     }
 }
