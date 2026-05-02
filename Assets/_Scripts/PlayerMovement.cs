@@ -54,7 +54,14 @@ public class PlayerMovement : MonoBehaviour
 
         if (animator != null)
         {
-            animator.SetFloat("Walking", verticalInput);
+            if (verticalInput != 0 || horizontalInput != 0)
+            {
+                animator.SetBool("Walking", true);
+            }
+            else
+            {
+                animator.SetBool("Walking", false);
+            }
         }
         
         if (Input.GetKey(KeyCode.LeftShift))
